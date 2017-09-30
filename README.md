@@ -74,8 +74,12 @@ feature columns. They happen to be all of type `double`, so using
 
 
 ## Result
-Now we have a dataset where each row represents one observation of one subject in one activity.
-Each column represents exactly one variable.
-The observational units are in one table.
+Now we have a dataset where:
 
-The result is a happy tidy dataset.
+* each row represents one observation of one subject in one activity.
+
+* Each column represents exactly one variable.
+
+* The observational units are in one table.
+
+=> The result is a happy tidy dataset.
