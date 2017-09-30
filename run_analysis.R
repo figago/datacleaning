@@ -100,3 +100,6 @@ descriptivedata <- subdata %>% inner_join(activities, by="activityid")
 mean.data.by.subject.and.activity <- descriptivedata %>% 
   group_by(dataset, subjectid, activitylabel) %>%
   summarize_if(is.double, mean)
+
+# Write the data
+write.table(mean.data.by.subject.and.activity, file="mean_dataset.csv", row.names = F)
