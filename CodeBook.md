@@ -1,10 +1,20 @@
 Feature Information
 ===================
 
-This is an updated version of the original `features_info.txt`.
+## Overview
 
 The dataset contains data from smartphone sensors, collected during an experiment with 30 individuals 
-while doing a fixed set of activities:
+while doing a fixed set of activities.
+
+## Subjects
+
+The subjects of the experiment are thirty people.
+Labeled in the data as integers from 1 to 30.
+
+
+## Activities
+
+Six activities were studied during the experiment
 
  * Standing
 
@@ -19,11 +29,13 @@ while doing a fixed set of activities:
  * Walking Downstairs
 
 
+The labels are straighforward.
 
 
+## Signals
 These are represented by various signals coming from accelerometer and gyroscope in the X, Y, and Z axis.
 
-The signals in this database are either in the time domain,
+The signals in this dataset are either in the time domain,
 or in the frequency domain, using a Fourier transform.
 
 * Columns containing "Acc" are accelerometer data
@@ -51,16 +63,21 @@ The set of variables that were estimated from these signals are:
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
-gravityMean
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+ * gravityMean
+
+ * tBodyAccMean
+
+ * tBodyAccJerkMean
+
+ * tBodyGyroMean
+ 
+ * tBodyGyroJerkMean
 
 
 Then all the features were averaged for each subject for each activity.
 The data contains 180 rows corresponding to the averages by subject by activity of the original features.
 
+## Feature List
 The complete list of variables of each feature vector is:
 
 ```
